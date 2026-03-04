@@ -1,0 +1,179 @@
+/* SERVICES HEADER */
+
+.services-header {
+    background: linear-gradient(180deg, #111111, #0b0b0b);
+    text-align: center;
+    padding: 40px 10%;
+    position: relative;
+}
+
+/* GOLD LINES */
+.header-top-line,
+.header-bottom-line {
+    height: 2px;
+    background: linear-gradient(to right, transparent, #C6A75E, transparent);
+    width: 100%;
+}
+
+.header-top-line {
+    margin-bottom: 20px;
+}
+
+.header-bottom-line {
+    margin-top: 20px;
+}
+
+/* HEADING STYLE */
+.services-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #C6A75E;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* SERVICES TOP BANNER IMAGE */
+
+/* SERVICES BANNER */
+.services-banner {
+    background: #0F0F0F;
+    padding: 0;
+}
+.services-banner {
+    background: #0F0F0F;
+    padding: 0;
+    margin-top: -5px;
+}
+
+.services-banner img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+/* DARK OVERLAY */
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+}
+/* SERVICES CARDS SECTION */
+
+.services-cards {
+    background: #0F0F0F;
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* EACH CARD */
+.service-box {
+    background: #151515;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(198, 167, 94, 0.3);
+    transition: 0.4s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    border-color: #C6A75E;
+}
+
+/* IMAGE */
+.service-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.service-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-content h3 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    color: #C6A75E;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.learn-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #C6A75E, #A67C00);
+    color: black;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.learn-btn:hover {
+    transform: scale(1.05);
+}
+/* WHY CHOOSE US SECTION */
+
+.why-choose {
+    background: linear-gradient(180deg, #111111, #0b0b0b);
+    padding: 70px 10%;
+    text-align: center;
+}
+
+/* HEADER */
+.why-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.why-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #C6A75E;
+}
+
+.line {
+    height: 2px;
+    width: 120px;
+    background: linear-gradient(to right, transparent, #C6A75E, transparent);
+}
+
+/* FEATURES */
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.why-box {
+    text-align: center;
+    max-width: 220px;
+}
+
+/* ICON STYLE */
+.why-icon {
+    font-size: 40px;
+    color: #C6A75E;
+    margin-bottom: 15px;
+}
+
+.why-box h3 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+}

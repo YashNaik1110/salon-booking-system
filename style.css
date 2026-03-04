@@ -1,0 +1,235 @@
+body {
+    background-color: #0F0F0F;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* APPOINTMENT TOP HEADER */
+
+.appointment-header {
+    background: #0F0F0F;
+    padding: 50px 8% 30px;
+    border-bottom: 1px solid rgba(198, 167, 94, 0.3);
+}
+
+.appointment-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Title */
+.appointment-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #C6A75E;
+    letter-spacing: 1px;
+}
+
+/* Right Buttons */
+.appointment-steps {
+    display: flex;
+    gap: 15px;
+}
+
+.step-btn {
+    padding: 8px 18px;
+    background: transparent;
+    border: 1px solid #C6A75E;
+    color: #C6A75E;
+    border-radius: 25px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Active Step */
+.step-btn.active {
+    background: linear-gradient(135deg, #C6A75E, #A67C00);
+    color: black;
+    border: none;
+}
+
+/* Hover Effect */
+.step-btn:hover {
+    background: #C6A75E;
+    color: black;
+}
+/* MAIN APPOINTMENT SECTION */
+
+.appointment-main {
+    background: #0F0F0F;
+    padding: 60px 8%;
+}
+
+.appointment-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+/* LEFT FORM BOX */
+.appointment-form-box {
+    flex: 1;
+    background: #151515;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(198, 167, 94, 0.3);
+}
+
+/* FORM STYLE */
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.appointment-form input,
+.appointment-form select {
+    padding: 20px;
+    background: #1c1c1c;
+    border: 1px solid rgba(198, 167, 94, 0.3);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus {
+    outline: none;
+    border-color: #C6A75E;
+}
+
+/* BOOK BUTTON */
+.book-btn {
+    background: linear-gradient(135deg, #C6A75E, #A67C00);
+    color: black;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.book-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* RIGHT IMAGE */
+.owner-photo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.owner-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid gold;
+}
+
+.owner-photo h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+.owner-photo p {
+    color: #aaa;
+    font-size: 14px;
+}
+/* BOOKING STEPS SECTION */
+
+.booking-steps-section {
+    background: #0F0F0F;
+    padding: 60px 8%;
+    border-top: 1px solid rgba(198, 167, 94, 0.2);
+}
+
+.booking-steps-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* SMALL IMAGE UNDER FORM */
+.bottom-left-box img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+}
+
+
+/* RIGHT CONTENT */
+.steps-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* EACH STEP */
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #151515;
+    border-radius: 10px;
+    border: 1px solid rgba(198, 167, 94, 0.3);
+    transition: 0.3s ease;
+}
+
+.step-item:hover {
+    border-color: #C6A75E;
+}
+
+/* NUMBER CIRCLE */
+.step-number {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, #C6A75E, #A67C00);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* STEP TEXT */
+.step-item h3 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+.appointment-image-box {
+    flex: 1;
+}
+
+.appointment-image-box img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    transition: 0.4s ease;
+}
+
+.appointment-image-box img:hover {
+    transform: scale(1.03);
+}
+.appointment-container {
+    display: flex;
+    gap: 60px;
+    align-items: stretch;
+}
+
+.appointment-form-box {
+    display: flex;
+    justify-content: center;
+}

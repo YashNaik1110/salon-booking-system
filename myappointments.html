@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Appointments - Elite Salon</title>
+    <link rel="stylesheet" href="myappointments1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="welcome-user">
+    <h2 id="welcomeText"></h2>
+</div>
+
+<body>
+
+<header class="appointments-header">
+    <div class="header-line"></div>
+    <h1>My Appointment History</h1>
+    <div class="header-line"></div>
+</header>
+
+<div class="welcome-user">
+    <h2 id="welcomeText"></h2>
+</div>
+
+<table border="1" width="100%">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Service</th>
+            <th>Date</th>
+            <th>Time</th>
+        </tr>
+    </thead>
+    <tbody id="appointmentsBody"></tbody>
+</table>
+
+<script>
+
+const data = JSON.parse(localStorage.getItem("latestAppointment"));
+const tableBody = document.getElementById("appointmentsBody");
+
+if(data){
+
+    // Welcome message
+    document.getElementById("welcomeText").innerText =
+        "Welcome, " + data.name + " 👋";
+
+    const row = `
+        <tr>
+            <td>${data.name}</td>
+            <td>${data.phone}</td>
+            <td>${data.service}</td>
+            <td>${data.date}</td>
+            <td>${data.time}</td>
+        </tr>
+    `;
+
+    tableBody.innerHTML = row;
+}
+
+</script>
+
+</body>
+</body>
+</html>

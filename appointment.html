@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Appointment - Elite Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<section class="appointment-header">
+    <div class="appointment-header-container">
+
+        <h1 class="appointment-title">
+            BOOK YOUR APPOINTMENT
+        </h1>
+
+        <div class="appointment-steps">
+            <button class="step-btn active">1. Date & Time</button>
+            <button class="step-btn">2. Your Details</button>
+            <button class="step-btn">3. Confirm</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="appointment-main">
+
+    <div class="appointment-container">
+
+        <!-- LEFT FORM BOX -->
+        <div class="appointment-form-box">
+
+            <form class="appointment-form" id="bookingForm">
+
+                <form class="appointment-form" id="bookingForm">
+
+    <input type="text" id="name" placeholder="Your Name" required>
+    
+    <input type="tel" id="phone" placeholder="Phone Number" required>
+
+    <select id="service" required>
+        <option value="">Select Service</option>
+        <option>Haircut</option>
+        <option>Beard Trim</option>
+        <option>Hair Styling</option>
+        <option>Facial</option>
+    </select>
+
+    <input type="date" id="date" required>
+
+    <input type="time" id="time" required>
+
+    <button type="submit" class="book-btn">
+        Book Appointment
+    </button>
+
+</form>
+
+            </form>
+           
+
+        </div>
+
+        <!-- RIGHT IMAGE BOX -->
+        <div class="appointment-image-box">
+            <img src="images/bookimage1.png" alt="Salon Image">
+        </div>
+
+    </div>
+
+</section>
+<section class="booking-steps-section">
+
+    <div class="booking-steps-container">
+
+      <!-- SMALL BOTTOM LEFT IMAGE -->
+            <div class="bottom-left-box">
+                <img src="images/interior.png" alt="Salon Interior">
+            </div>
+
+
+        <!-- RIGHT STEPS -->
+        <div class="steps-content">
+
+            <div class="step-item">
+                <div class="step-number">1</div>
+                <h3>Choose Date & Time</h3>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">2</div>
+                <h3>Fill Your Details</h3>
+            </div>
+
+            <div class="step-item">
+                <div class="step-number">3</div>
+                <h3>Confirm Booking</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const appointment = {
+        name: document.getElementById("name").value,
+        phone: document.getElementById("phone").value,
+        service: document.getElementById("service").value,
+        date: document.getElementById("date").value,
+        time: document.getElementById("time").value
+    };
+
+    // Save only this booking
+    localStorage.setItem("latestAppointment", JSON.stringify(appointment));
+
+    // Go to My Appointment page
+    window.location.href = "myappointments.html";
+});
+</script>
+</body>
+</html>

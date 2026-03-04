@@ -1,0 +1,114 @@
+/* ===== PAGE BACKGROUND ===== */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #0f0f0f, #1a1a1a);
+    color: white;
+}
+
+/* ===== HEADER ===== */
+
+.appointments-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.appointments-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #C6A75E;
+    margin: 20px 0;
+}
+
+.header-line {
+    height: 2px;
+    width: 200px;
+    margin: auto;
+    background: linear-gradient(to right, transparent, #C6A75E, transparent);
+}
+
+/* ===== WELCOME TEXT ===== */
+
+.welcome-user {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.welcome-user h2 {
+    color: #C6A75E;
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+/* ===== TABLE DESIGN ===== */
+
+table {
+    width: 85%;
+    margin: auto;
+    border-collapse: collapse;
+    background: #151515;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(198, 167, 94, 0.2);
+}
+
+/* Table Header */
+thead {
+    background: #1f1f1f;
+}
+
+thead th {
+    padding: 15px;
+    color: #C6A75E;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Table Rows */
+tbody td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(198, 167, 94, 0.2);
+    font-size: 14px;
+}
+
+/* Hover Effect */
+tbody tr:hover {
+    background: rgba(198, 167, 94, 0.1);
+    transition: 0.3s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        background: #1a1a1a;
+        padding: 10px;
+    }
+
+    tbody td {
+        display: block;
+        text-align: right;
+        padding: 8px;
+        position: relative;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        color: #C6A75E;
+    }
+}
